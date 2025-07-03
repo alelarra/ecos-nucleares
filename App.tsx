@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
-import Header from './components/Header';
-import GameOutput from './components/GameOutput';
-import UserInput from './components/UserInput';
-import { GameState, GameLogEntry } from './types';
-import { initializeGame, processCommand } from './services/gameService';
-import GameOverOverlay from './components/GameOverOverlay';
+import Header from './components/Header.tsx';
+import GameOutput from './components/GameOutput.tsx';
+import UserInput from './components/UserInput.tsx';
+import { GameState, GameLogEntry } from './types.ts';
+import { initializeGame, processCommand } from './services/gameService.ts';
+import GameOverOverlay from './components/GameOverOverlay.tsx';
 
 const App: React.FC = () => {
   const [gameState, setGameState] = useState<GameState | null>(null);
